@@ -1,0 +1,119 @@
+
+.shoppingVer2 {
+  margin: 0;
+  padding: 0;
+  background-color: #d1c4e9;
+  box-sizing: border-box;
+}
+.shoppingVer2 .shopping_list {
+  max-width: 500px;
+  width: 90%;
+  background-color: #b39ddb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+.shoppingVer2 p.tit {
+  font-family: 'Tmon';
+  text-align: center;
+  color: #fff;
+  background-color: #836fa9;
+  margin: 0;
+  padding: 30px 0;
+  font-size: 30px;
+}
+.shoppingVer2 .list_wrap {
+  width: 90%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.shoppingVer2 .add_item_box{
+  position: relative;
+}
+.shoppingVer2 .add_item_box input{
+  border: 2px solid #b39ddb;
+  background-color: #ede7f6;
+  font-size: 23px;
+  width: 45%;
+}
+.shoppingVer2 .add_item_box button {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  position: absolute; 
+  right: 0;
+  color: #673ab7;
+  cursor: pointer;
+}
+.shoppingVer2 .list_item_box{
+  padding-top: 10px;
+  border-bottom: 2px solid #836fa9;
+}
+.shoppingVer2 .item_row {
+  font-size: 25px;
+  position: relative;
+  padding: 2px 0;
+  border-top: 1px solid #b39ddb;
+}
+.shoppingVer2 .item_row.checked {
+  background-color: rgba(0,0,0,0.3);
+}
+.shoppingVer2 input.check_box {}
+.shoppingVer2 span.item_name {
+  padding: 0 10px 0 5px;
+  cursor: pointer;
+}
+.shoppingVer2 span.item_price {
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+.shoppingVer2 .trash_btn {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding-left: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.shoppingVer2 .list_item_result {
+  font-size: 20px;
+  padding-top: 10px; 
+  color: rgb(87, 87, 87);
+  position: relative;
+}
+.shoppingVer2 .list_item_result div {
+  padding-top: 5px;
+}
+.shoppingVer2 .item_checked {}
+.shoppingVer2 .item_unchecked{}
+.shoppingVer2 .item_total{
+  color: #000;
+  font-weight: bold;
+}
+.shoppingVer2 .item_checked span, 
+.shoppingVer2 .item_unchecked span, 
+.shoppingVer2 .item_total span {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 800px){
+  .shoppingVer2 .add_item_box input {
+    font-size: 18px;
+    width: 40%;
+  }
+  .shoppingVer2 .add_item_box button {
+    font-size: 20px;
+  }
+  .shoppingVer2 .list_item_result {
+    font-size: 16px;
+  }
+  .shoppingVer2 .item_total {
+    font-size: 18px;
+  }
+}

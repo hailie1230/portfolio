@@ -6,6 +6,7 @@
   --color-yellow: #FFF2DE;
   --color-ligth-yellow: #FFFAF0;
   --color-dark-yellow: #FFF1D8;
+  --color-orange-yellow: #ffcc80;
   --color-mint : #D1E9DB;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -438,7 +439,17 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
 .sec04 .sec4Wrap .left .secBox .box:nth-child(2n) {
   align-self: flex-end;
 }
-.sec04 .sec4Wrap .left .secBox .box .boxImg {}
+.sec04 .sec4Wrap .left .secBox .box .boxImg {
+  /* background-color: teal; */
+  border: 10px solid var(--color-orange-yellow);
+  height: 570px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.sec04 .sec4Wrap .left .secBox .box .boxImg.shoppingVer1,
+.sec04 .sec4Wrap .left .secBox .box .boxImg.shoppingVer2 {
+  overflow-y: scroll;
+}
 .sec04 .sec4Wrap .left .secBox .box .boxTxt {
   text-transform: uppercase;
   font-size: 30px; font-weight: 700;
@@ -502,7 +513,11 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   user-select:  none;
   border: 4px solid var(--color-dark-yellow);
   border-radius: 20px;
-  background: center / cover no-repeat url(../img/ani_wave.jpg) ;
+  /* background: center / cover no-repeat url(../img/ani_wave.jpg) ; */
+}
+.sec05 .sec5Wrap .secBox .aniGellery .gallery iframe {
+  width: 100%;
+  height: 100%;
 }
 .sec05 .sec5Wrap .secBox .aniGellery.active .gallery {
   z-index: 10;

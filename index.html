@@ -6,18 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portpolio</title>
 
+  <!-- font style -->
   <link rel="stylesheet" href="assets/font/font.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- layout style -->
   <link rel="stylesheet" href="assets/css/reset00.css">
   <link rel="stylesheet" href="assets/css/style00.css">
   <link rel="stylesheet" href="assets/css/media_style00.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   
+  <!-- works style -->
+  <link rel="stylesheet" href="assets/css/style_carrot.css">
+  <link rel="stylesheet" href="assets/css/style_shoppinglist_ver1.css">
+  <link rel="stylesheet" href="assets/css/style_shoppinglist_ver2.css">
+  
+  <!-- layout script -->
   <script src="https://kit.fontawesome.com/8049297440.js" crossorigin="anonymous"></script>
-  <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+
+  <!-- works script -->
+  <script src="assets/js/carrot/carrot.js" defer></script>
+  <script src="assets/js/shoppinglist/shoppinglist_ver1.js" defer></script>
+  <script src="assets/js/shoppinglist/shoppinglist_ver2.js" defer></script>
 
 </head>
 <body>
@@ -249,11 +262,77 @@
           </div>
           <div class="secBox">
             <div class="box">
-              <div class="boxImg">
-                <img src="assets/img/sc_item01.png" alt="페이지">
+              <div class="boxImg shoppingVer1">
+                <div class="shopping_list_v1">
+                  <p class="tit_v1">Shopping List</p>
+                  <div class="list_wrap_v1">
+                    <div class="list_item_making_v1">
+                      <form class="new_form_v1">
+                        <input class="list_item_add_v1" type="text" placeholder="list name">
+                        <button type="submit" class="item_add_btn_v1">+</button>
+                      </form>
+                    </div>
+                    <div class="list_item_box_v1">
+                      <!-- 추가되는 아이템 리스트 -->
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="boxTxt nexon">
-                to do list
+                shopping list ver1
+              </div>
+            </div><!--//box-->
+            <div class="box">
+              <div class="boxImg shoppingVer2">
+                <div class="shopping_list">
+                  <p class="tit">Shopping List</p>
+                  <div class="list_wrap">
+                    <div class="add_item_box">
+                      <input class="input_name" type="text" placeholder="list name">
+                      <input class="input_price" type="number" placeholder="expected price">
+                      <button class="item_add_btn">+</button>
+                    </div>
+                    <div class="list_item_box">
+                    </div>
+                    <div class="list_item_result">
+                      <div class="item_checked">
+                        Checked: <span class="sum_checked_result">0 $</span>
+                      </div>
+                      <div class="item_unchecked">
+                        Unchecked: <span class="sum_unchcked_result">0 $</span>
+                      </div>
+                      <div class="item_total">
+                        toal: <span class="sum_total_result">0 $</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="boxTxt nexon">
+                shopping list ver2
+              </div>
+            </div><!--//box-->
+            <div class="box">
+              <div class="boxImg carrotGame">
+                <div class="game">
+                  <div class="game__header">
+                    <button class="game__button">
+                      <i class="playIcon fa-solid fa-play"></i>
+                    </button>
+                    <span class="game__timer">0:0</span>
+                    <span class="game__score">9</span>
+                  </div>
+                  <div class="game__field"></div>
+                </div>
+                <div class="pop-up pop-up--hide">
+                  <button class="pop-up__refresh">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                  </button>
+                  <span class="pop-up__message">Hello</span>
+                </div>
+              </div>
+              <div class="boxTxt nexon">
+                carrot game
               </div>
             </div><!--//box-->
             <div class="box">
@@ -261,23 +340,7 @@
                 <img src="assets/img/sc_item01.png" alt="페이지">
               </div>
               <div class="boxTxt nexon">
-                to do list
-              </div>
-            </div><!--//box-->
-            <div class="box">
-              <div class="boxImg">
-                <img src="assets/img/sc_item01.png" alt="페이지">
-              </div>
-              <div class="boxTxt nexon">
-                to do list
-              </div>
-            </div><!--//box-->
-            <div class="box">
-              <div class="boxImg">
-                <img src="assets/img/sc_item01.png" alt="페이지">
-              </div>
-              <div class="boxTxt nexon">
-                to do list
+                shopping mall game
               </div>
             </div><!--//box-->
           </div>
@@ -300,9 +363,9 @@
         </h2>
         <div id="" class="secBox sec5Box">
           <div class="boxWrap aniGellery">
-            <a href="assets/ani/wave/index.html" class="sec5BoxTxt boxTxt nexon" target="_blank">make wave</a>
+            <a href="https://hailie1230.github.io/js_ani_wave/index.html" class="sec5BoxTxt boxTxt nexon" target="_blank">make wave</a>
             <!-- <div class="gallery wave"><a href="assets/ani/wave/index.html" target="_blank"></a></div> -->
-            <div class="gallery wave"></div>
+            <div class="gallery"><iframe src="https://hailie1230.github.io/js_ani_wave/index.html" frameborder="0"></iframe></div>
           </div>
           <div class="boxWrap aniGellery">
             <div class="sec5BoxTxt boxTxt nexon">Draw Circle</div>
