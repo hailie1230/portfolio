@@ -4,9 +4,9 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-yellow: #FFF2DE;
-  --color-ligth-yellow: #FFFAF0;
+  --color-light-yellow: #FFFAF0;
   --color-dark-yellow: #FFF1D8;
-  --color-orange-yellow: #ffcc80;
+  --color-orange-yellow: #ffe0b2;
   --color-mint : #D1E9DB;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -24,6 +24,11 @@
 *{box-sizing: border-box;}
 body {height: 3000px; background-color: var(--color-white); color: var(--text-color); overflow-x: hidden;}
 #header{}
+#contents {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
 .section {width: 91.9vw; margin-left: 8.1vw;}
 .sec01 {}
 .sec02 {}
