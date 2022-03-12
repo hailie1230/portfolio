@@ -453,13 +453,14 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
 .sec04 .sec4Wrap .left .secBox .box .boxImg {
   /* background-color: teal; */
   border: var(--border-script-imgBox) solid var(--color-orange-yellow);
+  width: 100%;
   height: 570px;
   border-radius: 20px;
   overflow: hidden;
 }
 .sec04 .sec4Wrap .left .secBox .box .boxImg.shoppingVer1,
 .sec04 .sec4Wrap .left .secBox .box .boxImg.shoppingVer2 {
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .sec04 .sec4Wrap .left .secBox .box .boxTxt {
   text-transform: uppercase;
