@@ -3,7 +3,7 @@
 const CARROT_SIZE = 60;
 const CARROT_COUNT = 25;
 const BUG_COUNT = 25;
-const GAME_DURATION_SEC = 13;
+const GAME_DURATION_SEC = 10;
 
 const field = document.querySelector('.game__field');
 const fieldRect = field.getBoundingClientRect();
