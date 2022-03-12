@@ -103,17 +103,27 @@
 }
 
 @media screen and (max-width: 800px){
+  .shoppingVer2 p.tit {
+    font-size: 20px;
+    padding: 15px 0;
+  }
   .shoppingVer2 .add_item_box input {
-    font-size: 18px;
-    width: 40%;
+    font-size: 16px;
+    width: 45%;
   }
   .shoppingVer2 .add_item_box button {
     font-size: 20px;
+  }
+  .shoppingVer2 .item_row {
+    font-size: 15px;
+  }
+  .shoppingVer2 .trash_btn {
+    font-size: 15px;
   }
   .shoppingVer2 .list_item_result {
     font-size: 16px;
   }
   .shoppingVer2 .item_total {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 }

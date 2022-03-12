@@ -44,7 +44,7 @@
   margin-top: 8px;
   visibility: hidden;
   user-select : none;
-  cursor auto;
+  cursor: auto;
 }
 .carrotGame .game__score {
   text-align: center;
@@ -59,7 +59,7 @@
   color: white;
   visibility: hidden;
   user-select : none;
-  cursor auto;
+  cursor: auto;
 }
 .carrotGame .game__field {
   width: 100%;
@@ -106,4 +106,50 @@
 .carrotGame .carrot:hover, 
 .carrotGame .bug:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px){ 
+  .carrotGame .game__header {
+    padding: 35px 5px;
+  }
+  .carrotGame .game__button {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-width: 2px;
+  }
+  .carrotGame .game__timer {
+    border-width: 2px;
+    font-size: 20px;
+  }
+  .carrotGame .game__score {
+    border-width: 2px;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .carrotGame .game__field {
+    margin-top: 10px;
+    height: 190px;
+  }
+  .carrotGame .pop-up {
+    width: 70%;
+    transform: translateY(-186%);
+  }
+  .carrotGame .pop-up__refresh {
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+  }
+  .carrotGame .pop-up__message {
+    font-size: 20px;
+  }
+
+  .carrotGame .carrot {
+    width: 50px;
+  }
+  .carrotGame .bug {
+    width: 30px;
+  }
 }

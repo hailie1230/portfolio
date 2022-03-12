@@ -117,6 +117,16 @@
 }
 
 @media screen and (max-width: 800px){
+  .shoppingVer1 p.tit_v1 {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+  .shoppingVer1 .item_row_v1 {
+    font-size: 15px;
+  }
+  .shoppingVer1 button.item_delete_v1 {
+    font-size: 15px;
+  }
   .shoppingVer1 .list_item_making_v1 input {
     font-size: 18px;
     width: 43%;

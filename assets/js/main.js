@@ -2,13 +2,13 @@ let isClikedOpen = false;
 
 window.addEventListener("scroll", scrolling);
 
-function scrolling()
+function scrolling(event)
 {
   // scroll Top 값 구하기
   let scroll = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
-  document.querySelector(".scroll").textContent = scroll;
+  document.querySelector(".scroll").textContent = `H : ${scroll}`;
 
-  // mobile - width값 800에 따른 nav메뉴 효과  
+  // pc, mobile nav메뉴 효과 
   if (window.innerWidth > 800) 
   {
     if(isClikedOpen == false) 
@@ -21,8 +21,7 @@ function scrolling()
         document.querySelector(".gnbWrap").classList.remove("gnbHide");
       }
     }
-    
-  }
+  } 
 };
 
 // 브라우저 width값 구하기 
@@ -30,7 +29,7 @@ window.addEventListener("resize", resizing);
 function resizing(scrollBar)
 {
   let resize = window.innerWidth;
-  document.querySelector(".innerWidth").textContent = resize;
+  document.querySelector(".innerWidth").textContent = `W : ${resize}`;
 }
 
 //** gnb메뉴 시작 **
@@ -65,6 +64,17 @@ toggleBtnMobile.addEventListener('click', () =>
   gnbWrap.classList.toggle('active');
 });
 
+const nav = document.querySelector('.nav');
+const navList = document.querySelector('.navList');
+const list = document.querySelector('.list');
+nav.addEventListener('click', mobHideList);
+
+function mobHideList(){
+  if(window.innerWidth < 800){
+    // console.log('dd')
+    gnbWrap.classList.remove('active');
+  }
+}
 
 // ** animation - gallery 
 let aniGellery = document.querySelector('.sec5Box')
