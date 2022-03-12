@@ -52,7 +52,7 @@ function stopGame(){
   started = false;
   stopGameTimer();
   hideGameButton();
-  showPopUpWithText('REPLAY?');
+  showPopUpWithText('REPLAY❓');
   playSound(alertSound);
   stopSound(bgSound);
 }
@@ -66,7 +66,7 @@ function finishGame(win){
   }
   stopGameTimer();
   stopSound(bgSound);
-  showPopUpWithText(win? 'YOU WON!' : 'YOU LOST!');
+  showPopUpWithText(win? 'YOU WON! 🎉' : 'YOU LOST! 💩');
 }
 function showStopButton(){
   const icon = gameBtn.querySelector('.playIcon');
