@@ -1,8 +1,8 @@
 'use strict';
 
 const CARROT_SIZE = 60;
-const CARROT_COUNT = 25;
-const BUG_COUNT = 25;
+const CARROT_COUNT = 20;
+const BUG_COUNT = 20;
 const GAME_DURATION_SEC = 10;
 
 const field = document.querySelector('.game__field');
@@ -116,8 +116,8 @@ function initGame(){
   gameScore.innerText = CARROT_COUNT;
   // console.log(fieldRect);
   // 벌레와 당근을 생성한 뒤 field에 추가 해줌 
-  addItem('carrot', 25, 'assets/img/carrot.png')
-  addItem('bug', 25, 'assets/img/bug.png')
+  addItem('carrot', 20, 'assets/img/carrot.png')
+  addItem('bug', 20, 'assets/img/bug.png')
 }
 function onFieldClick(event){
   // console.log(event);
