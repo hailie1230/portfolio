@@ -354,7 +354,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   font-size: 230px; 
   padding: 50px 30px;
   position: relative;
-  border-bottom: 3px solid var(--color-black);
+  border-bottom: var(--border-line) solid var(--color-black);
 }
 .sec03 .sec3Wrap .secTit .titIcon {
   position: absolute; top: 18px; left: 200px;
@@ -409,7 +409,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   display: flex;
 }
 .sec04 .sec4Wrap {
-  border: 3px solid var(--color-black);
+  border: var(--border-line) solid var(--color-black);
   width: 100%;
   display: flex; justify-content: space-between;
 
@@ -419,9 +419,10 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   padding-bottom: 100px;
 }
 .sec04 .sec4Wrap .left .secTit {
+  text-transform: uppercase;  
   font-size: 240px; line-height: 250px;
   padding: 100px 90px;
-  border-bottom: 4px solid var(--color-black);
+  border-bottom: var(--border-line) solid var(--color-black);
   position: relative;
 }
 .sec04 .sec4Wrap .left .secTit .titIcon {
@@ -503,14 +504,14 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   }
 }
 
-.sec05 .sec5Wrap .secBox {
+.sec05 .sec5Wrap .sec5Box {
   position: relative;
   
 }
-.sec05 .sec5Wrap .secBox .aniGellery {
+.sec05 .sec5Wrap .sec5Box .aniGallery {
   
 }
-.sec05 .sec5Wrap .secBox .aniGellery .gallery {
+.sec05 .sec5Wrap .sec5Box .aniGallery .gallery {
   width: 35vw;
   height: 40vw;
   position: fixed;
@@ -525,17 +526,17 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   user-select:  none;
   border: 4px solid var(--color-dark-yellow);
   border-radius: 20px;
-  /* background: center / cover no-repeat url(../img/ani_wave.jpg) ; */
+  
 }
-.sec05 .sec5Wrap .secBox .aniGellery .gallery iframe {
+.sec05 .sec5Wrap .sec5Box .aniGallery .gallery iframe {
   width: 100%;
   height: 100%;
 }
-.sec05 .sec5Wrap .secBox .aniGellery.active .gallery {
+.sec05 .sec5Wrap .sec5Box .aniGallery.active .gallery {
   z-index: 10;
   opacity: 1;
 }
-.sec05 .sec5Wrap .secBox .aniGellery.active.click .gallery {
+.sec05 .sec5Wrap .sec5Box .aniGallery.active.click .gallery {
   width: 100vw;
   height: 100vh;
   z-index: 1000;
@@ -543,7 +544,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   transform: translateY(0);
   background-color: wheat;
 }
-.sec05 .sec5Wrap .secBox .boxWrap {
+.sec05 .sec5Wrap .sec5Box .boxWrap {
   height: 34vh;
   display: flex;
   align-items: flex-end;
@@ -551,7 +552,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   position: relative;
   border-top: var(--border-line) solid var(--color-black30);
 }
-.sec05 .sec5Wrap .secBox .boxWrap .boxTxt {
+.sec05 .sec5Wrap .sec5Box .boxWrap .boxTxt {
   width: 100%;
   height: 100%;
   font-size: 9.5vw;
@@ -565,7 +566,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   cursor: pointer;
   display: inline-block;
 }
-.sec05 .sec5Wrap .secBox .boxWrap:hover .boxTxt {
+.sec05 .sec5Wrap .sec5Box .boxWrap:hover .boxTxt {
   padding-left: 0;
   color: var(--color-black);
 }

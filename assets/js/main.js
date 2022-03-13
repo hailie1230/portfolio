@@ -32,7 +32,7 @@ function resizing(scrollBar)
   document.querySelector(".innerWidth").textContent = `W : ${resize}`;
 }
 
-//** gnb메뉴 시작 **
+// gnb메뉴
 // 클릭 이벤트
 const toggleBtnPc     = document.querySelector('.rightBtn');
 const toggleBtnMobile = document.querySelector('.rightBtnMo');
@@ -42,7 +42,7 @@ const btnClicked      = document.querySelectorAll('.btnClicked');
 const clickRemove     = gnbWrap.classList.remove('active');
 // console.log(btnClicked);
 
-// pc 
+// * pc 
 toggleBtnPc.addEventListener('click', () => 
 {
   gnbWrap.classList.toggle('showClose');
@@ -58,7 +58,28 @@ toggleBtnPc.addEventListener('click', () =>
   }
 });
 
-// mobile
+// pc >>animation - gallery 
+const aniGalleryWrap = document.querySelector('.sec5Box');
+let activeMob = document.querySelector('.activeMob');
+let gallery = document.querySelector('.gallery');
+
+aniGalleryWrap.addEventListener('mouseover', galleryMouseover);
+aniGalleryWrap.addEventListener('mouseout', galleryMouseout);
+
+function galleryMouseover(event){
+  if(window.innerWidth > 800){
+    event.target.parentNode.classList.add('active');
+  } else {
+    event.target.parentNode.classList.remove('active');
+  }
+};
+function galleryMouseout(event){
+  if(window.innerWidth > 800){
+    event.target.parentNode.classList.remove('active');
+  } 
+}
+
+// * mobile
 toggleBtnMobile.addEventListener('click', () => 
 {
   gnbWrap.classList.toggle('active');
@@ -75,19 +96,22 @@ function mobHideList(){
     gnbWrap.classList.remove('active');
   }
 }
+// mob >>animation - gallery 
+const aniGallery = document.querySelectorAll('.aniGallery')
+aniGalleryWrap.addEventListener('click', galleryClick);
 
-// ** animation - gallery 
-let aniGellery = document.querySelector('.sec5Box')
-let outBtn = document.querySelector('.outBtn')
-let gallery = document.querySelector('.gallery')
+function galleryClick(event){
+  if(window.innerWidth < 800){
+    for(var i = 0; i < aniGallery.length; i++){
+      aniGallery[i].querySelector('.boxTxt').addEventListener('click', function(e){
+        e.preventDefault();
+        for(var j = 0; j < aniGallery.length; j++){
+          aniGallery[j].classList.remove('activeMob');
+        }
+        this.parentNode.classList.add('activeMob');
+      });
+    }
+  } 
+}
 
-aniGellery.addEventListener('mouseover', (event) => {
-  event.target.parentNode.classList.add('active');  
-})
-aniGellery.addEventListener('mouseout', (event) => {
-  event.target.parentNode.classList.remove('active');
-})
-// aniGellery.addEventListener('click', (event) => {
-//   event.target.parentNode.classList.toggle('click');  
-// })
 
