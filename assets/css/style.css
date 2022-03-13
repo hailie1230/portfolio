@@ -536,14 +536,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   z-index: 10;
   opacity: 1;
 }
-.sec05 .sec5Wrap .sec5Box .aniGallery.active.click .gallery {
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000;
-  top: 0; right: 0;
-  transform: translateY(0);
-  background-color: wheat;
-}
+
 .sec05 .sec5Wrap .sec5Box .boxWrap {
   height: 34vh;
   display: flex;
@@ -566,7 +559,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   cursor: pointer;
   display: inline-block;
 }
-.sec05 .sec5Wrap .sec5Box .boxWrap:hover .boxTxt {
+.sec05 .sec5Wrap .sec5Box .aniGallery.active .boxTxt {
   padding-left: 0;
   color: var(--color-black);
 }

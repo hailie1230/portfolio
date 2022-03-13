@@ -285,11 +285,11 @@
   .sec05 .sec5Wrap .sec5Box .boxWrap .boxTxt {
     width: auto;
     height: auto;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
     padding-top: 0;
     padding-left: 0;
-    padding: 10px;
+    padding: 2vw;
     position: static;
     transition: none;
   }

@@ -69,9 +69,7 @@ aniGalleryWrap.addEventListener('mouseout', galleryMouseout);
 function galleryMouseover(event){
   if(window.innerWidth > 800){
     event.target.parentNode.classList.add('active');
-  } else {
-    event.target.parentNode.classList.remove('active');
-  }
+  } 
 };
 function galleryMouseout(event){
   if(window.innerWidth > 800){
