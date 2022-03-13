@@ -258,8 +258,8 @@
   .sec05 .sec5Wrap .sec5Box {
     margin-top: 110vw;
     display: flex;
-    justify-content: space-around;
-    width: 96vw;
+    justify-content: space-between;
+    width: 94vw;
     margin-left: auto; margin-right: auto;
   }
   .sec05 .sec5Wrap .sec5Box .boxWrap {
