@@ -259,13 +259,14 @@
     margin-top: 110vw;
     display: flex;
     justify-content: space-around;
-    width: 94vw;
+    width: 96vw;
     margin-left: auto; margin-right: auto;
   }
   .sec05 .sec5Wrap .sec5Box .boxWrap {
     position: static;
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 0;
     display: inline-block;
     border: var(--border-line) solid var(--color-black30);
   
@@ -285,11 +286,11 @@
   .sec05 .sec5Wrap .sec5Box .boxWrap .boxTxt {
     width: auto;
     height: auto;
-    font-size: 3.5vw;
-    line-height: 3.5vw;
+    font-size: 4vw;
+    line-height: 4vw;
     padding-top: 0;
     padding-left: 0;
-    padding: 2vw;
+    padding: 3vw;
     position: static;
     transition: none;
   }
@@ -302,9 +303,7 @@
   .sec05 .sec5Wrap .sec5Box .boxWrap.activeMob .gallery {
     opacity: 1;
   }
-  .sec05 .sec5Wrap .sec5Box .boxWrap:hover .boxTxt {
-    padding-left: 10px;
-  }
+  
 }
 
 

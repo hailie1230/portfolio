@@ -32,7 +32,7 @@ function resizing(scrollBar)
   document.querySelector(".innerWidth").textContent = `W : ${resize}`;
 }
 
-// gnb메뉴
+// gnb menu
 // 클릭 이벤트
 const toggleBtnPc     = document.querySelector('.rightBtn');
 const toggleBtnMobile = document.querySelector('.rightBtnMo');
@@ -42,7 +42,7 @@ const btnClicked      = document.querySelectorAll('.btnClicked');
 const clickRemove     = gnbWrap.classList.remove('active');
 // console.log(btnClicked);
 
-// * pc 
+// * pc >> gnb menu
 toggleBtnPc.addEventListener('click', () => 
 {
   gnbWrap.classList.toggle('showClose');
@@ -57,6 +57,23 @@ toggleBtnPc.addEventListener('click', () =>
     isClikedOpen = true;
   }
 });
+// * mobile >> gnb menu
+toggleBtnMobile.addEventListener('click', () => 
+{
+  gnbWrap.classList.toggle('active');
+});
+
+const nav = document.querySelector('.nav');
+const navList = document.querySelector('.navList');
+const list = document.querySelector('.list');
+nav.addEventListener('click', mobHideList);
+
+function mobHideList(){
+  if(window.innerWidth < 800){
+    // console.log('dd')
+    gnbWrap.classList.remove('active');
+  }
+}
 
 // pc >>animation - gallery 
 const aniGalleryWrap = document.querySelector('.sec5Box');
@@ -77,32 +94,15 @@ function galleryMouseout(event){
   } 
 }
 
-// * mobile
-toggleBtnMobile.addEventListener('click', () => 
-{
-  gnbWrap.classList.toggle('active');
-});
-
-const nav = document.querySelector('.nav');
-const navList = document.querySelector('.navList');
-const list = document.querySelector('.list');
-nav.addEventListener('click', mobHideList);
-
-function mobHideList(){
-  if(window.innerWidth < 800){
-    // console.log('dd')
-    gnbWrap.classList.remove('active');
-  }
-}
 // mob >>animation - gallery 
 const aniGallery = document.querySelectorAll('.aniGallery')
 aniGalleryWrap.addEventListener('click', galleryClick);
 
-function galleryClick(event){
+function galleryClick(){
   if(window.innerWidth < 800){
     for(var i = 0; i < aniGallery.length; i++){
-      aniGallery[i].querySelector('.boxTxt').addEventListener('click', function(e){
-        e.preventDefault();
+      aniGallery[i].querySelector('.boxTxt').addEventListener('click', function(event){
+        event.preventDefault();
         for(var j = 0; j < aniGallery.length; j++){
           aniGallery[j].classList.remove('activeMob');
         }
