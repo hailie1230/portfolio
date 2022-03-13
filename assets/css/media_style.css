@@ -282,7 +282,14 @@
     height: 100vw;
     /* opacity: 0.3; */
   }
-
+  .sec05 .sec5Wrap .sec5Box .aniGallery .gallery iframe {
+    width: 250%;
+    height: 100%;
+    transform: translateX(-25%);
+  }
+  .sec05 .sec5Wrap .sec5Box .aniGallery:nth-child(2) .gallery iframe {
+    transform: translateX(-40%);
+  }
   .sec05 .sec5Wrap .sec5Box .boxWrap .boxTxt {
     width: auto;
     height: auto;
