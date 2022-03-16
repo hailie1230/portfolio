@@ -542,7 +542,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   position: fixed;
   top: 50%; right: 3vw; 
   transform: translateY(-50%);
-  background-color: teal;
+  background-color: #fff;
   z-index: -10;
   opacity: 0;
   font-size: 100px;
@@ -557,8 +557,17 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   height: 100%;
   transform: translateX(-25%);
 }
+.sec05 .sec5Wrap .sec5Box .aniGallery .gallery canvas {
+  width: 100%;
+  height: 100%;
+}
 .sec05 .sec5Wrap .sec5Box .aniGallery:nth-child(2) .gallery iframe {
   transform: translateX(-40%);
+}
+.sec05 .sec5Wrap .sec5Box .aniGallery:nth-child(2) .gallery iframe {
+  width: 100%;
+  height: 100%;
+  transform: translateX(0%);
 }
 .sec05 .sec5Wrap .sec5Box .aniGallery.active .gallery {
   z-index: 10;
