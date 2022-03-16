@@ -1,3 +1,5 @@
+
+
 let isClikedOpen = false;
 
 window.addEventListener("scroll", scrolling);
@@ -81,7 +83,10 @@ let activeMob = document.querySelector('.activeMob');
 let gallery = document.querySelector('.gallery');
 
 aniGalleryWrap.addEventListener('mouseover', galleryMouseover);
+gallery.addEventListener('mouseover', galleryMouseover);
+
 aniGalleryWrap.addEventListener('mouseout', galleryMouseout);
+gallery.addEventListener('mouseout', galleryMouseout);
 
 function galleryMouseover(event){
   if(window.innerWidth > 800){
