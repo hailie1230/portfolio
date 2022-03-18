@@ -112,7 +112,9 @@
 
   /*** contents > sec02 : about me ***/
   .sec02 {
-    padding: 10vw 0 0vw;
+    padding: 10vw 0 20vw;
+    height: auto;
+    /* background-color: antiquewhite; */
   }
   .sec02 .sec2Wrap {
     width: 90vw; 
@@ -352,6 +354,7 @@
   }
   .footer .lolling {
     margin-top: 0;
+    position: static;
   }
 }
 

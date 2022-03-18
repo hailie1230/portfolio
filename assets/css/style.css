@@ -585,10 +585,12 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
 .footer {
   height: 100vh;
   background: top center / cover no-repeat url(../img/bg_contact.png) var(--color-middle-yellow);
+  position: relative;
 }
 .footerWrap {
   display: flex;
   flex-direction: column;
+  
 }
 .footerWrap .secTit {
   font-size: 180px;
@@ -603,7 +605,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
 }
 .footerCont p.contTit {
   width: 100%;
-  font-size: 80px;
+  font-size: 75px;
   padding: 15px 30px 15px 0;
 }
 .footerCont .contactBox {
@@ -685,6 +687,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   }
 }
 .footer .lolling {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
   justify-content: flex-end;
 }
