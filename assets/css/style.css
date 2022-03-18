@@ -44,21 +44,21 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
 /* scroll */
 .scroll {
   position: fixed;
-  left: 20px;
+  right: 20px;
   bottom: 20px;
   z-index: 100; 
   background-color: salmon; color: var(--color-white);
   padding: 10px;
-  z-index: 1000000;
+  
 }
 .innerWidth {
   position: fixed;
-  left: 20px;
+  right: 20px;
   bottom: 70px;
   z-index: 100; 
   background-color: darksalmon; color: var(--color-white);
   padding: 10px;
-  z-index: 1000000;
+  
 }
 
 /* lolling */
