@@ -297,9 +297,10 @@
     line-height: 4vw;
     padding-top: 0;
     padding-left: 0;
-    padding: 3vw;
+    padding: 3vw 1vw;
     position: static;
     transition: none;
+    text-align: center;
   }
   .sec05 .sec5Wrap .sec5Box .boxWrap.activeMob {
     border: var(--border-line) solid #000;
@@ -310,7 +311,48 @@
   .sec05 .sec5Wrap .sec5Box .boxWrap.activeMob .gallery {
     opacity: 1;
   }
-  
+
+  /* footer */
+  .footer {
+    height: auto;
+    background-image: url(../img/bg_contact_mob.png);
+  }
+  .footerWrap .secTit {
+    font-size: 12vw;
+    padding: 6.5vw 5vw 2vw;
+  }
+  .footerCont {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p.contTit {
+    /* padding: 6.5vw 0; */
+    font-size: 8vw;
+  }
+  .contactBox {
+    width: 100%;
+  }
+  .contactBox form {
+    font-size: 16px;
+  }
+  .contactBox form label span {
+    width: 30%;
+  }
+  .contactBox form label textarea {
+    width: 69%;
+    height: 45px;
+  }
+  .contactBox form .button button {
+    font-size: 15px;
+    padding: 5px 15px;
+  }
+  .imgBox {
+    display: none;
+  }
+  .footer .lolling {
+    margin-top: 0;
+  }
 }
 
 

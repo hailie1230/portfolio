@@ -32,6 +32,9 @@
   <script src="assets/js/shoppinglist/shoppinglist_ver1.js" defer></script>
   <script src="assets/js/shoppinglist/shoppinglist_ver2.js" defer></script>
 
+  <!-- contact me script -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
 </head>
 <body>
   <iframe src="https://hailie1230.github.io/js_ani_wave/index.html" frameborder="0" style="display: none;"></iframe>
@@ -393,6 +396,78 @@
       </div>
     </section>
     <!--//sec05-->
+
+    <section id="footer" class="footer section">
+      <div class="footerWrap">
+        <h2 class="secTit timon">
+          Thank you!!
+        </h2>
+        <div class="footerCont">
+          <p class="contTit timon">Do you want to know <span>about me?</span></p>
+          <div class="contactBox">
+            <form
+              action="https://formspree.io/f/xknyzqak"
+              method="POST"
+            >
+              <label>
+                <span>Your email:</span>
+                <input type="email" name="email">
+              </label>
+              <label>
+                <span>Your message:</span>
+                <textarea name="message"></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <div class="button">
+                <button type="submit"><span>Send</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="imgBox">
+            <img class="samrtphone" src="assets/img/smartphone.png" alt="스마트폰 터치 일러스트">
+            <span class="light disIb">
+              <img src="assets/img/light.png" alt="light">
+            </span>
+          </div>
+        </div>
+        <div class="lolling move timon">
+          <p>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;REACT&nbsp;&nbsp;VUE&nbsp;&nbsp;</p>
+        </div>
+      </div>
+      <script>
+        /* paste this line in verbatim */
+        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+        /* customize formbutton below*/     
+        formbutton("create", {
+          action: "https://formspree.io/f/xknyzqak",
+          title: "How can we help?",
+          fields: [
+            { 
+              type: "email", 
+              label: "Email:", 
+              name: "email",
+              required: true,
+              placeholder: "your@email.com"
+            },
+            {
+              type: "textarea",
+              label: "Message:",
+              name: "message",
+              placeholder: "What's on your mind?",
+            },
+            { type: "submit" }      
+          ],
+          styles: {
+            title: {
+              backgroundColor: "gray"
+            },
+            button: {
+              backgroundColor: "gray"
+            }
+          }
+        });
+      </script>
+    </section>
 
   </main>
 </body>
