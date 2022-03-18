@@ -326,28 +326,28 @@
     margin-left: auto;
     margin-right: auto;
   }
-  p.contTit {
+  .footerCont p.contTit {
     /* padding: 6.5vw 0; */
     font-size: 8vw;
   }
-  .contactBox {
+  .footerCont .contactBox {
     width: 100%;
   }
-  .contactBox form {
+  .footerCont .contactBox form {
     font-size: 16px;
   }
-  .contactBox form label span {
+  .footerCont .contactBox form label span {
     width: 30%;
   }
-  .contactBox form label textarea {
+  .footerCont .contactBox form label textarea {
     width: 69%;
     height: 45px;
   }
-  .contactBox form .button button {
+  .footerCont .contactBox form .button button {
     font-size: 15px;
     padding: 5px 15px;
   }
-  .imgBox {
+  .footerCont .imgBox {
     display: none;
   }
   .footer .lolling {

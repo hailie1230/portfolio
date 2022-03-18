@@ -601,45 +601,46 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   margin-left: 30px;
   /* justify-content: space-between; */
 }
-p.contTit {
+.footerCont p.contTit {
   width: 100%;
   font-size: 80px;
   padding: 15px 30px 15px 0;
 }
-.contactBox {
+.footerCont .contactBox {
   width: 60%;
   padding: 20px;
   background-color: var(--color-dark-yellow);
   /* max-width: 40vw; */
 }
-.contactBox form{
+.footerCont .contactBox form{
   font-size: 30px;
 }
-.contactBox form label {
+.footerCont .contactBox form label {
   display: block;
   margin-bottom: 10px;
   display: flex;
 }
-.contactBox form label input,
-.contactBox form label textarea{
+.footerCont .contactBox form label input,
+.footerCont .contactBox form label textarea{
   border: var(--border-line) solid var(--color-orange-yellow);
 }
-.contactBox form label input {
+.footerCont .contactBox form label input {
   width: 30%;
 }
-.contactBox form label textarea {
+.footerCont .contactBox form label textarea {
   width: 76%;
   height: 10vw;
 }
-.contactBox form label span {
+.footerCont .contactBox form label span {
   display: inline-block;
   width: 25%;
-}.contactBox form .button {
+}
+.footerCont .contactBox form .button {
   display: flex;
   justify-content: flex-end;
   margin-top: 5px;
 }
-.contactBox form .button button {
+.footerCont .contactBox form .button button {
   background-color: var(--color-dark-orange-yellow);
   padding: 10px 30px;
   font-size: 25px;
@@ -649,7 +650,7 @@ p.contTit {
   border-radius: 35px;
   /* border: var(--border-line) solid var(--color-black); */
 }
-.imgBox {
+.footerCont .imgBox {
   /* background-color: rgba(255,200,0,0.3); */
   width: 40%;
   display: flex;
@@ -657,13 +658,13 @@ p.contTit {
   align-items: center ;
   position: relative;
 }
-.imgBox img.samrtphone {
+.footerCont .imgBox img.samrtphone {
   width: 15vw;
   height: 15vw;
   position: relative;
   z-index: 2;
 }
-.imgBox .light {
+.footerCont .imgBox .light {
   width: 175px;
   height: 175px;
   position: absolute;
