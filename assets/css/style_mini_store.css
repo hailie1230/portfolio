@@ -1,0 +1,126 @@
+:root {
+  /* color */
+  --color-black: #000000;
+  --color-gray: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #ffd54f;
+  --color-orange: #ffb74d;
+  --color-green: #66bb6a;
+  --color-red: #f44336;
+  --color-light-yellow: #fff3e0;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* size */
+  --base-space : 8px;
+  --size-border : 4px;
+  --size-button : 60px;
+  --size-thumbnail : 50px;
+  --font-size : 18px;
+
+  /* animation*/
+  --anmation-duration : 300ms;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--color-light-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.storeTit {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.storeTit .logo {
+  cursor: pointer;
+  transition: transform var(--anmation-duration) ease;
+  width: 100px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.store .btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--anmation-duration) ease;
+  margin-right: var(--base-space);
+}
+.storeTit .logo:hover,
+.store .btn:hover {
+  transform: scale(1.1);
+}
+.store.buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--base-space);
+}
+.store .imgBtn {
+  width: var(--size-button);
+  height: var(--size-button);
+}
+
+.store .colorBtn {
+  font-size: var(--font-size);
+  padding: calc(var(--base-space) * 1.5);
+  border-radius: var(--size-border);
+}
+.store .blue {
+  background-color: var(--color-blue);
+}
+.store .red {
+  background-color: var(--color-red);
+}
+.store .yellow {
+  background-color: var(--color-yellow);
+}
+.store .orange {
+  background-color: var(--color-orange);
+}
+.store .green {
+  background-color: var(--color-green);
+}
+.store .pink {
+  background-color: var(--color-pink);
+}
+.store.items {
+  width:  60%;
+  height: 60%;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
+  border: 5px solid #ffe0b2;
+  padding: var(--base-space);
+}
+.store .item {
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  padding: var(--base-space);
+  margin-bottom: var(--base-space);
+}
+.store .item__thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
+  margin-right: 10px;
+}
+.store .item__description {
+  margin-left:  var(--base-space);
+  font-size: var(--font-size);
+}
+
+.invisible {
+  display: none;
+}
