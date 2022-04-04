@@ -678,7 +678,7 @@ body {height: 3000px; background-color: var(--color-white); color: var(--text-co
   height: 175px;
   position: absolute;
   top: 50%;
-  left: 23%;
+  left: 22%;
   transform: translateY(-55%);
   animation: light 2s linear infinite;;
 }
