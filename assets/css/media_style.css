@@ -168,7 +168,7 @@
   }
   .sec03 .sec3Wrap .secBox .boxWrap .boxImg {
     width:100%; height: auto; 
-    background-image: url(../img/pro_item01.png);
+    /* background-image: url(../img/pro_item01.png); */
     background-position: top center;
     border-width: 5px;
   }
@@ -176,7 +176,7 @@
     border-width: 5px;
   }
   .sec03 .sec3Wrap .secBox .boxWrap .boxImg.project-habit iframe {
-    height: 540px;
+    min-height: 540px;
   }
   .sec03 .sec3Wrap .secBox .boxWrap .boxTxt,
   .sec03 .sec3Wrap .secBox .boxWrap2 .boxTxt {
