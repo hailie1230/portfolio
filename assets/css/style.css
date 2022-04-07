@@ -396,6 +396,7 @@ body {background-color: var(--color-white); color: var(--text-color); overflow-x
   background-position: top center;
   border: 10px solid var(--color-yellow);
   /* overflow-y: scroll; */
+  overflow:hidden;
 }
 .sec03 .sec3Wrap .secBox .boxWrap2 .boxImg {
   border: 10px solid var(--color-yellow);
