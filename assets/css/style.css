@@ -78,6 +78,23 @@ body {background-color: var(--color-white); color: var(--text-color); overflow-x
   100% {text-indent: -60em;}
 }
 
+/* btn */
+a.workBtn {
+  display: inline-block;
+  color: var(--color-light-grey);
+  border: 2px solid var(--color-light-grey);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 7px;
+  margin-left: 15px;
+  transition: all var(--animation-duration) ease;
+  text-transform: none;
+  font-weight: bold;
+}
+a.workBtn:hover {
+  background-color: var(--color-light-grey);
+  color: var(--color-white);
+}
 
 /*** gnbWrap ***/
 .gnbWrap {
@@ -411,9 +428,12 @@ body {background-color: var(--color-white); color: var(--text-color); overflow-x
   text-transform: uppercase;
   font-size: 30px;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 .sec03 .sec3Wrap .secBox .boxWrap2 .boxTxt {
-  text-align: center;
+  justify-content: center;
+
 }
 
 /*** sec4 - script : script ***/
@@ -492,22 +512,7 @@ body {background-color: var(--color-white); color: var(--text-color); overflow-x
   align-items: center;
 
 }
-.sec04 .sec4Wrap .left .secBox .box .boxTxt a {
-  display: inline-block;
-  color: var(--color-light-grey);
-  border: 2px solid var(--color-light-grey);
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 5px 7px;
-  margin-left: 10px;
-  transition: all var(--animation-duration) ease;
-  text-transform: none;
-  
-}
-.sec04 .sec4Wrap .left .secBox .box .boxTxt a:hover {
-  background-color: var(--color-light-grey);
-  color: var(--color-white);
-}
+
 .sec04 .right {
   width: 10%; 
   padding-bottom: 40px; padding-left: 15px;
