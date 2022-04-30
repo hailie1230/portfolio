@@ -493,9 +493,6 @@ a.workBtn:hover {
   border-radius: 20px;
   overflow: hidden;
 }
-.sec04 .sec4Wrap .left .secBox .box .boxImg.miniStore {
-  height: 800px; 
-}
 .sec04 .sec4Wrap .left .secBox .box .boxImg iframe {
   width: 100%;
   height: 100%;
@@ -503,6 +500,12 @@ a.workBtn:hover {
 .sec04 .sec4Wrap .left .secBox .box .boxImg.shoppingVer1,
 .sec04 .sec4Wrap .left .secBox .box .boxImg.shoppingVer2 {
   /* overflow-y: scroll; */
+}
+.sec04 .sec4Wrap .left .secBox .box .boxImg.moleGame {
+  overflow: hidden;
+}
+.sec04 .sec4Wrap .left .secBox .box .boxImg.miniStore {
+  height: 800px; 
 }
 .sec04 .sec4Wrap .left .secBox .box .boxTxt {
   text-transform: uppercase;
