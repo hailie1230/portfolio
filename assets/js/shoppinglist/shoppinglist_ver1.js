@@ -1,38 +1,39 @@
 'use strict';
 
 //list 업데이트 
-const inputV1 = document.querySelector('.list_item_add_v1');
-const addBtnV1 = document.querySelector('.item_add_btn_v1');
-const itemsV1 = document.querySelector('.list_item_box_v1');
-const formV1 = document.querySelector('.new_form_v1')
+const input = document.querySelector('.list_item_add');
+const addBtn = document.querySelector('.item_add_btn');
+const items = document.querySelector('.list_item_box');
+const form = document.querySelector('.new_form')
 
 //form 태그 안에 input에서 enter를 하거나, 버튼을 클릭했을때 -> submit작동
 //submit 작동하면 페이지를 리로드함
-formV1.addEventListener('submit',(event)=>{
-  event.preventDefault(); //자동적인 행동 삭제
-  onAddV1();
+form.addEventListener('submit',(event)=>{
+  event.preventDefault(); // 브라우저의 자동적인 행동 삭제
+  onAdd();
 })
 
-function onAddV1() {
-  const text = inputV1.value;
+function onAdd() {
+  const text = input.value;
   if(text === ''){
     input.focus();
     return;
   }
 
-  const itemV1 = createItem(text);
-  itemsV1.appendChild(itemV1);
-  inputV1.value = '';
+  const item = createItem(text);
+  items.appendChild(item);
+  input.value = '';
 
 }
 let id = 0;
 function createItem(text){
-  const itemRowV1 = document.createElement('div');
-  itemRowV1.setAttribute('class', 'item_row_v1');
-  itemRowV1.setAttribute('data-id', id);
-  itemRowV1.innerHTML = `
-  <span class="item_name_v1">${text}</span>
-  <button class="item_delete_v1">
+  const itemRow = document.createElement('div');
+  itemRow.setAttribute('class', 'item_row');
+  itemRow.setAttribute('data-id', id);
+  itemRow.innerHTML = `
+  <input type="checkbox" class="check_box">
+  <span class="item_name">${text}</span>
+  <button class="item_delete">
     <i class="far fa-trash-alt" data-id = ${id}></i>
   </button>
   `
@@ -56,7 +57,7 @@ function createItem(text){
   // itemRow.appendChild(name);
   // itemRow.appendChild(deleteBtn);
 
-  return itemRowV1;
+  return itemRow;
 
 }
 
@@ -82,11 +83,11 @@ function createItem(text){
 // })
 
 
-itemsV1.addEventListener('click', (event) => {
+items.addEventListener('click', (event) => {
   const id = event.target.dataset.id;
   if(id){
     // console.log('dd')
-    const toBeDelete = document.querySelector(`.item_row_v1[data-id="${id}"]`);
+    const toBeDelete = document.querySelector(`.item_row[data-id="${id}"]`);
     toBeDelete.remove();
   }
   

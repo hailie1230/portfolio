@@ -230,7 +230,10 @@
   .sec04 .sec4Wrap .left .secBox .box .boxImg {
     height: auto;
   }
-  .sec04 .sec4Wrap .left .secBox .box .boxImg.carrotGame {
+  .sec04 .sec4Wrap .left .secBox .box .boxImg.shoppingVer1 {
+
+  }
+  .sec04 .sec4Wrap .left .secBox .box .boxImg.moleGame {
     height: 400px;
   }
   .sec04 .sec4Wrap .right {
