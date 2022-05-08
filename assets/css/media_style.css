@@ -8,9 +8,15 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
+  
   /* layout */
   #header {}
   .section {width: 100vw; margin-left: 0; overflow: hidden;}
+
+  /* btn */
+  a.workBtn { 
+    font-size: 14px;
+  }
 
   /*** gnbWrap ***/
   .gnbWrap {

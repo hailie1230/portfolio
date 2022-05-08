@@ -81,8 +81,6 @@ body {background-color: var(--color-white); color: var(--text-color); overflow-x
 /* btn */
 a.workBtn {
   display: inline-block;
-  color: var(--color-light-grey);
-  border: 2px solid var(--color-light-grey);
   border-radius: 5px;
   font-size: 20px;
   padding: 5px 7px;
@@ -91,10 +89,32 @@ a.workBtn {
   text-transform: none;
   font-weight: bold;
 }
-a.workBtn:hover {
+a.workBtn.ligtGray {
+  color: var(--color-light-grey);
+  border: 2px solid var(--color-light-grey);
+}
+a.workBtn.gray {
+  color: var(--color-grey);
+  border: 2px solid var(--color-grey);
+}
+a.workBtn.darkGray {
+  color: var(--color-dark-grey);
+  border: 2px solid var(--color-dark-grey);
+}
+
+a.workBtn.ligtGray:hover {
   background-color: var(--color-light-grey);
   color: var(--color-white);
 }
+a.workBtn.gray:hover {
+  background-color: var(--color-grey);
+  color: var(--color-white);
+}
+a.workBtn.darkGray:hover {
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+}
+
 
 /*** gnbWrap ***/
 .gnbWrap {
